@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Andrew's Copy &amp; Print Centre</title>
+  <meta name="robots" content="noindex">
+
+  <script>
+    (function () {
+      if (!/^https?:$/.test(location.protocol)) return;
+
+      var base = "/";
+      if (/\.github\.io$/.test(location.hostname)) {
+        base = "/" + location.pathname.split("/")[1] + "/";
+      }
+      document.write('<base href="' + base + '">');
+
+      var pdf = "https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf";
+      var path = location.pathname.toLowerCase();
+      var local = "/" + path.slice(base.length);
+      if (/basic-price-list\.pdf$/.test(local) || /^\/pricing\/?$/.test(local)) {
+        location.replace(pdf);
+        return;
+      }
+      var clean = local.replace(/\.html$/, "").replace(/\/+$/, "");
+      var moved = { "/about-us": "about-us", "/upload-files": "upload-files", "/old-home": "", "/sample-page": "" };
+      if (clean in moved) {
+        var target = base + moved[clean];
+        if (target !== location.pathname) {
+          location.replace(target + location.search + location.hash);
+        }
+      }
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="https://media.cwd-cdn.com/andrews-copy-and-print/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://media.cwd-cdn.com/andrews-copy-and-print/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container not-found-header">
+      <a href="./">
+        <img class="not-found-logo" src="https://media.cwd-cdn.com/andrews-copy-and-print/images/logo-header.png" alt="Andrew's Copy &amp; Print Centre" width="500" height="158">
+      </a>
+    </div>
+  </header>
+
+  <main class="not-found">
+    <div class="container">
+      <h1>Sorry, we can&rsquo;t find that page</h1>
+      <p>The page may have moved when we updated our website. Try one of these instead:</p>
+      <div class="not-found-actions">
+        <a class="btn btn-primary" href="./">Home</a>
+        <a class="btn btn-secondary" href="about-us">About Us</a>
+        <a class="btn btn-secondary" href="upload-files">Upload Files</a>
+        <a class="btn btn-secondary" href="https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf" target="_blank" rel="noopener">Price List</a>
+      </div>
+      <p>Or call us at <a href="tel:+17054461114">705 446 1114</a>.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright">&copy; <span data-year>2026</span> Andrew&rsquo;s Copy &amp; Print Centre. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-year]").forEach(function (el) {
+      el.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>

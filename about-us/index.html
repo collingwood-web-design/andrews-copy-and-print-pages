@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us | Andrew's Copy &amp; Print Centre</title>
+  <link rel="canonical" href="https://andrewscopycentre.com/about-us">
+  <script>
+    (function () {
+      var target = "../about-us" + location.search + location.hash;
+      try {
+        var key = "redirected:" + location.pathname;
+        if (Date.now() - Number(sessionStorage.getItem(key) || 0) < 5000) return;
+        sessionStorage.setItem(key, String(Date.now()));
+      } catch (e) {}
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This page has moved. <a href="../about-us">Continue to About Us</a>.</p>
+</body>
+</html>

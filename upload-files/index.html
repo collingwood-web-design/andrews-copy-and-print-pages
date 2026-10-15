@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Files | Andrew's Copy &amp; Print Centre</title>
+  <link rel="canonical" href="https://andrewscopycentre.com/upload-files">
+  <script>
+    (function () {
+      var target = "../upload-files" + location.search + location.hash;
+      try {
+        var key = "redirected:" + location.pathname;
+        if (Date.now() - Number(sessionStorage.getItem(key) || 0) < 5000) return;
+        sessionStorage.setItem(key, String(Date.now()));
+      } catch (e) {}
+      location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <p>This page has moved. <a href="../upload-files">Continue to Upload Files</a>.</p>
+</body>
+</html>
