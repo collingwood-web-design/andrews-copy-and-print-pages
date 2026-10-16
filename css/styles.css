@@ -665,6 +665,13 @@ p {
   white-space: nowrap;
 }
 
+.ticker-window {
+  display: block;
+  width: min(88%, var(--max-width));
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .ticker {
   display: inline-block;
   padding-left: 100%;
