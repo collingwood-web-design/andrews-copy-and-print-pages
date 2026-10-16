@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Pricing | Andrew's Copy &amp; Print Centre</title>
-  <meta name="robots" content="noindex">
-  <meta http-equiv="refresh" content="0; url=https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf">
+  <link rel="canonical" href="https://andrewscopycentre.com/pricing">
+  <script>
+    (function () {
+      var target = "../pricing" + location.search + location.hash;
+      try {
+        var key = "redirected:" + location.pathname;
+        if (Date.now() - Number(sessionStorage.getItem(key) || 0) < 5000) return;
+        sessionStorage.setItem(key, String(Date.now()));
+      } catch (e) {}
+      location.replace(target);
+    })();
+  </script>
 </head>
 <body>
-  <p>Our pricing is in the <a href="https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf">Basic Service Price List (PDF)</a>.</p>
+  <p>This page has moved. <a href="../pricing">Continue to Pricing</a>.</p>
 </body>
 </html>

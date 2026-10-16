@@ -1,12 +1,12 @@
 # Andrew's Copy & Print Centre
 
-> Copy and print centre in the heart of downtown Collingwood, Ontario, Canada, with easy access and free parking, serving Collingwood and the surrounding areas since October 1st, 2009. Printing, photocopying and design services with quick turnarounds and competitive pricing. Also a FedEx & Purolator missed delivery & drop-off location.
+> Copy and print centre in the heart of downtown Collingwood, Ontario, Canada, with free parking outside the shop, serving Collingwood and the surrounding areas since October 1st, 2009. Printing, photocopying and design services with quick turnarounds and competitive pricing. Also a FedEx & Purolator missed delivery & drop-off location.
 
 ## Contact
 
 - Phone: 705 446 1114
 - Email: andrewscopy@gmail.com
-- Address: 191 Hurontario St #4, Collingwood, ON L9Y 2M1, Canada (in the heart of downtown Collingwood, in the Collingwood Plaza, free parking)
+- Address: 191 Hurontario St #4, Collingwood, ON L9Y 2M1, Canada (in the heart of downtown Collingwood, in the Collingwood Plaza, free parking outside the shop)
 - Hours: Monday to Friday 8:30am - 5:30pm; Saturday 9:00am - 4:00pm; closed Sundays and stat holidays
 - Google Maps: https://maps.google.com/?cid=7152159484506261528
 - Facebook: https://www.facebook.com/andrewscopyandprint
@@ -51,4 +51,5 @@
 - [Home](https://andrewscopycentre.com/): services overview, shipping drop-off, reviews and contact details
 - [About Us](https://andrewscopycentre.com/about-us): history, owner, location and full services list
 - [Upload Files](https://andrewscopycentre.com/upload-files): how to send files with WeTransfer, file setup and bleed guidance, FAQ
+- [Pricing](https://andrewscopycentre.com/pricing): basic service prices for photocopying, printing, business cards, wide format, binding, laminating and design
 - [Basic Service Price List (PDF)](https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf)

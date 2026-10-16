@@ -19,12 +19,12 @@
       var pdf = "https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf";
       var path = location.pathname.toLowerCase();
       var local = "/" + path.slice(base.length);
-      if (/basic-price-list\.pdf$/.test(local) || /^\/pricing\/?$/.test(local)) {
+      if (/basic-price-list\.pdf$/.test(local)) {
         location.replace(pdf);
         return;
       }
       var clean = local.replace(/\.html$/, "").replace(/\/+$/, "");
-      var moved = { "/about-us": "about-us", "/upload-files": "upload-files", "/old-home": "", "/sample-page": "" };
+      var moved = { "/about-us": "about-us", "/upload-files": "upload-files", "/pricing": "pricing", "/old-home": "", "/sample-page": "" };
       if (clean in moved) {
         var target = base + moved[clean];
         if (target !== location.pathname) {
@@ -58,7 +58,7 @@
         <a class="btn btn-primary" href="./">Home</a>
         <a class="btn btn-secondary" href="about-us">About Us</a>
         <a class="btn btn-secondary" href="upload-files">Upload Files</a>
-        <a class="btn btn-secondary" href="https://media.cwd-cdn.com/andrews-copy-and-print/files/basic-price-list.pdf" target="_blank" rel="noopener">Price List</a>
+        <a class="btn btn-secondary" href="pricing">Price List</a>
       </div>
       <p>Or call us at <a href="tel:+17054461114">705 446 1114</a>.</p>
     </div>
