@@ -340,6 +340,80 @@ p {
   margin-top: 0.85em !important;
 }
 
+/* About scenic hero */
+
+.page-hero--scenic {
+  overflow: hidden;
+  background: #1a2433;
+}
+
+.hero-stage {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-stage-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2048 / 867;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-flight {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.flight-dashes .flight-dash {
+  fill: #ffffff;
+  opacity: 0;
+  transition: opacity 0.12s linear;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.flight-dashes .flight-dash.is-visible {
+  opacity: 0.71;
+}
+
+.flight-path-motion {
+  fill: none;
+  stroke: none;
+  pointer-events: none;
+}
+
+.flight-plane {
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+}
+
+
+.hero-stage-copy {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-stage-copy h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.35rem, 3.4vw, 2.55rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+  white-space: nowrap;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+}
+
 /* Services */
 
 .services {
@@ -1283,6 +1357,13 @@ p {
   .hero-logo {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hero-stage-copy h1 {
+    white-space: normal;
+    max-width: 12ch;
+    font-size: clamp(1.45rem, 6.2vw, 2rem);
+    text-wrap: balance;
   }
 
   .hero-details {
