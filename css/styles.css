@@ -455,6 +455,11 @@ p {
 
 .welcome-flight-trail {
   opacity: 0.71;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.42));
+}
+
+.welcome-flight-plane {
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
 }
 
 .services-showcase--flight.reduce-motion .welcome-flight-trail {
@@ -719,11 +724,15 @@ p {
   fill: #ffffff;
   opacity: 0;
   transition: opacity 0.12s linear;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.35));
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
 }
 
 .shipping-flight-dashes .flight-dash.is-visible {
   opacity: 0.71;
+}
+
+.shipping-flight-plane {
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.6));
 }
 
 /* Testimonial */
