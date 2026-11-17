@@ -214,7 +214,7 @@
         </div>
 
         <div class="services-layout">
-          <figure class="services-showcase services-showcase--flight">
+          <figure class="services-showcase">
             <img
               class="services-showcase-photo"
               src="https://media.cwd-cdn.com/andrews-copy-and-print/images/stationery-services-hero.jpg"
@@ -223,46 +223,6 @@
               height="1627"
               loading="lazy"
             >
-            <svg class="services-flight" viewBox="0 0 1074.5 781.2" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-              <defs>
-                <mask id="welcome-trail-mask" maskUnits="userSpaceOnUse">
-                  <path
-                    id="welcome-trail-mask-path"
-                    fill="none"
-                    stroke="#fff"
-                    stroke-width="14"
-                    stroke-linecap="round"
-                    pathLength="1"
-                    stroke-dasharray="0 1"
-                    d="M101.9,207.9c-45.3,26.7-127,95.3,5.5,192.5,166.2,121.9,508.4-43.6,576,0,60.7,39.2,54.3,74.4,44.1,92.8"
-                  />
-                </mask>
-              </defs>
-              <path
-                class="welcome-flight-trail"
-                fill="none"
-                stroke="#8ec8ef"
-                stroke-width="7"
-                stroke-linecap="round"
-                stroke-miterlimit="10"
-                stroke-dasharray="14.1 20.2"
-                mask="url(#welcome-trail-mask)"
-                d="M101.9,207.9c-45.3,26.7-127,95.3,5.5,192.5,166.2,121.9,508.4-43.6,576,0,60.7,39.2,54.3,74.4,44.1,92.8"
-              />
-              <path
-                id="welcome-flight-path"
-                class="flight-path-motion"
-                d="M101.9,207.9c-45.3,26.7-127,95.3,5.5,192.5,166.2,121.9,508.4-43.6,576,0,60.7,39.2,54.3,74.4,44.1,92.8"
-              />
-              <g class="flight-plane welcome-flight-plane" transform="translate(101.9 207.9)">
-                <g transform="translate(-66 -22.8) scale(0.749 0.749)">
-                  <polygon fill="#ffffff" points="176.6 38.2 0.4 0.4 33.5 23.1"/>
-                  <polygon fill="#ffffff" points="61.7 60.1 41.3 32.6 176.6 38.2"/>
-                  <polygon fill="#f3f3f3" points="33.5 23.1 23.5 53 41.3 32.6 176.6 38.2"/>
-                  <polygon fill="#cccccc" points="23.5 53 52.7 48 41.3 32.6"/>
-                </g>
-              </g>
-            </svg>
           </figure>
 
           <ul class="service-grid">
@@ -633,24 +593,6 @@
           run();
         }
       }
-
-      (function initWelcomeFlight() {
-        var stage = document.querySelector(".services-showcase--flight");
-        var path = document.getElementById("welcome-flight-path");
-        var maskPath = document.getElementById("welcome-trail-mask-path");
-        var plane = document.querySelector(".welcome-flight-plane");
-        if (!stage || !path || !maskPath || !plane) return;
-        var length = path.getTotalLength();
-
-        function place(distance) {
-          var progress = orientPlane(path, plane, distance, length);
-          maskPath.setAttribute("stroke-dasharray", progress + " " + (1 - progress));
-        }
-
-        observeAndPlay(stage, function () {
-          playOnce(stage, function (t) { place(t * length); }, function () { place(length); });
-        });
-      })();
 
       (function initShippingFlight() {
         var stage = document.querySelector(".shipping-showcase--flight");

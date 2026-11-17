@@ -438,34 +438,6 @@ p {
   display: block;
 }
 
-.services-showcase--flight {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.services-flight {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.welcome-flight-trail {
-  opacity: 0.71;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.42));
-}
-
-.welcome-flight-plane {
-  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.5));
-}
-
-.services-showcase--flight.reduce-motion .welcome-flight-trail {
-  opacity: 0.71;
-}
-
 .service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1528,29 +1500,6 @@ p {
   }
 
   /* Slightly toned plane + stronger shadow for small-screen contrast */
-  .welcome-flight-plane {
-    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.55)) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.35));
-  }
-
-  .welcome-flight-plane polygon:nth-child(1),
-  .welcome-flight-plane polygon:nth-child(2) {
-    fill: #e4e6e8;
-  }
-
-  .welcome-flight-plane polygon:nth-child(3) {
-    fill: #d5d7da;
-  }
-
-  .welcome-flight-plane polygon:nth-child(4) {
-    fill: #b5b8bc;
-  }
-
-  .welcome-flight-trail {
-    stroke: #6ea4c7;
-    opacity: 0.85;
-    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.4));
-  }
-
   .shipping-flight-plane {
     filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.7)) drop-shadow(0 3px 5px rgba(0, 0, 0, 0.55));
   }
